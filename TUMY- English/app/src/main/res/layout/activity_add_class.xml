@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".addClassActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4"
+    android:id="@+id/parent_linear_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_primary">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/image_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/white"
+                    android:onClick="onBack"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tạo học phần"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textColor="@color/white"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+                <ImageView
+                    android:id="@+id/button_complete"
+                    android:src="@drawable/ic_baseline_check_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:onClick="complete" />
+                </LinearLayout>
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/nameTerm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_grey"
+            android:textColorHint="@color/black"
+            android:hint="Tên học phần"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_terms"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/round_grey"
+                    android:hint="Thuật ngữ"
+                    android:textColorHint="@color/black"
+                    android:layout_height="45dp"/>
+                <EditText
+                    android:id="@+id/edit_define"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/round_grey"
+                    android:hint="Định nghĩa"
+                    android:textColorHint="@color/black"
+                    android:layout_height="45dp"/>
+                <Button
+                    android:id="@+id/button_add"
+                    android:background="@color/primaryDark"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_weight="0.8"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:drawableRight="@drawable/ic_add"
+                    android:onClick="onAddField"/>
+
+        </LinearLayout>
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+
+</LinearLayout>

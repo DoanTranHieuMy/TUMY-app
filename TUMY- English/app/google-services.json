@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "529597625356",
+    "project_id": "baicuoiky-c400e",
+    "storage_bucket": "baicuoiky-c400e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529597625356:android:7d3f9c399ea73a77916a29",
+        "android_client_info": {
+          "package_name": "com.example.baicuoiky"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529597625356-8o71ta1kaukdhbn9jluedrjv6bosa0c6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV3jLOd60lLrxhH-5ItwgLgnN50mzLrlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529597625356-8o71ta1kaukdhbn9jluedrjv6bosa0c6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
